@@ -1,0 +1,296 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7C6153C9161FA8A5003DB80B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7C6153C7161FA8A5003DB80B /* InfoPlist.strings */; };
+		7C6153CC161FA8A5003DB80B /* XboxControllerHID.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7C6153CB161FA8A5003DB80B /* XboxControllerHID.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7C6153BF161FA8A5003DB80B /* XboxControllerHID.kext */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XboxControllerHID.kext; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C6153C3161FA8A5003DB80B /* Kernel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kernel.framework; path = System/Library/Frameworks/Kernel.framework; sourceTree = SDKROOT; };
+		7C6153C6161FA8A5003DB80B /* XboxControllerHID-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "XboxControllerHID-Info.plist"; sourceTree = "<group>"; };
+		7C6153C8161FA8A5003DB80B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7C6153CA161FA8A5003DB80B /* XboxControllerHID.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XboxControllerHID.h; sourceTree = "<group>"; };
+		7C6153CB161FA8A5003DB80B /* XboxControllerHID.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = XboxControllerHID.cpp; sourceTree = "<group>"; };
+		7C6153CD161FA8A5003DB80B /* XboxControllerHID-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "XboxControllerHID-Prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7C6153BA161FA8A5003DB80B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7C6153B2161FA8A5003DB80B = {
+			isa = PBXGroup;
+			children = (
+				7C6153C4161FA8A5003DB80B /* XboxControllerHID */,
+				7C6153C1161FA8A5003DB80B /* Frameworks */,
+				7C6153C0161FA8A5003DB80B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7C6153C0161FA8A5003DB80B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7C6153BF161FA8A5003DB80B /* XboxControllerHID.kext */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7C6153C1161FA8A5003DB80B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7C6153C2161FA8A5003DB80B /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7C6153C2161FA8A5003DB80B /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7C6153C3161FA8A5003DB80B /* Kernel.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		7C6153C4161FA8A5003DB80B /* XboxControllerHID */ = {
+			isa = PBXGroup;
+			children = (
+				7C6153CA161FA8A5003DB80B /* XboxControllerHID.h */,
+				7C6153CB161FA8A5003DB80B /* XboxControllerHID.cpp */,
+				7C6153C5161FA8A5003DB80B /* Supporting Files */,
+			);
+			path = XboxControllerHID;
+			sourceTree = "<group>";
+		};
+		7C6153C5161FA8A5003DB80B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7C6153C6161FA8A5003DB80B /* XboxControllerHID-Info.plist */,
+				7C6153C7161FA8A5003DB80B /* InfoPlist.strings */,
+				7C6153CD161FA8A5003DB80B /* XboxControllerHID-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		7C6153BB161FA8A5003DB80B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		7C6153BE161FA8A5003DB80B /* XboxControllerHID */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7C6153D0161FA8A5003DB80B /* Build configuration list for PBXNativeTarget "XboxControllerHID" */;
+			buildPhases = (
+				7C6153B9161FA8A5003DB80B /* Sources */,
+				7C6153BA161FA8A5003DB80B /* Frameworks */,
+				7C6153BB161FA8A5003DB80B /* Headers */,
+				7C6153BC161FA8A5003DB80B /* Resources */,
+				7C6153BD161FA8A5003DB80B /* Rez */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XboxControllerHID;
+			productName = XboxControllerHID;
+			productReference = 7C6153BF161FA8A5003DB80B /* XboxControllerHID.kext */;
+			productType = "com.apple.product-type.kernel-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7C6153B4161FA8A5003DB80B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Siavash Ghorbani";
+			};
+			buildConfigurationList = 7C6153B7161FA8A5003DB80B /* Build configuration list for PBXProject "XboxControllerHID" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7C6153B2161FA8A5003DB80B;
+			productRefGroup = 7C6153C0161FA8A5003DB80B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7C6153BE161FA8A5003DB80B /* XboxControllerHID */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7C6153BC161FA8A5003DB80B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C6153C9161FA8A5003DB80B /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXRezBuildPhase section */
+		7C6153BD161FA8A5003DB80B /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7C6153B9161FA8A5003DB80B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C6153CC161FA8A5003DB80B /* XboxControllerHID.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7C6153C7161FA8A5003DB80B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7C6153C8161FA8A5003DB80B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7C6153CE161FA8A5003DB80B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		7C6153CF161FA8A5003DB80B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		7C6153D1161FA8A5003DB80B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1.0.0d1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "XboxControllerHID/XboxControllerHID-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				INFOPLIST_FILE = "XboxControllerHID/XboxControllerHID-Info.plist";
+				MODULE_NAME = "Siavash Ghorbani.XboxControllerHID";
+				MODULE_VERSION = 1.0.0d1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = kext;
+			};
+			name = Debug;
+		};
+		7C6153D2161FA8A5003DB80B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1.0.0d1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "XboxControllerHID/XboxControllerHID-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				INFOPLIST_FILE = "XboxControllerHID/XboxControllerHID-Info.plist";
+				MODULE_NAME = "Siavash Ghorbani.XboxControllerHID";
+				MODULE_VERSION = 1.0.0d1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = kext;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7C6153B7161FA8A5003DB80B /* Build configuration list for PBXProject "XboxControllerHID" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C6153CE161FA8A5003DB80B /* Debug */,
+				7C6153CF161FA8A5003DB80B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7C6153D0161FA8A5003DB80B /* Build configuration list for PBXNativeTarget "XboxControllerHID" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C6153D1161FA8A5003DB80B /* Debug */,
+				7C6153D2161FA8A5003DB80B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7C6153B4161FA8A5003DB80B /* Project object */;
+}
