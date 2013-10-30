@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		7C6153C9161FA8A5003DB80B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7C6153C7161FA8A5003DB80B /* InfoPlist.strings */; };
 		7C6153CC161FA8A5003DB80B /* XboxControllerHID.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7C6153CB161FA8A5003DB80B /* XboxControllerHID.cpp */; };
+		7C94F53E16F4A85A00E841B7 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C94F53D16F4A85A00E841B7 /* IOKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -16,9 +17,11 @@
 		7C6153C3161FA8A5003DB80B /* Kernel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kernel.framework; path = System/Library/Frameworks/Kernel.framework; sourceTree = SDKROOT; };
 		7C6153C6161FA8A5003DB80B /* XboxControllerHID-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "XboxControllerHID-Info.plist"; sourceTree = "<group>"; };
 		7C6153C8161FA8A5003DB80B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		7C6153CA161FA8A5003DB80B /* XboxControllerHID.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XboxControllerHID.h; sourceTree = "<group>"; };
-		7C6153CB161FA8A5003DB80B /* XboxControllerHID.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = XboxControllerHID.cpp; sourceTree = "<group>"; };
+		7C6153CA161FA8A5003DB80B /* XboxControllerHID.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = XboxControllerHID.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		7C6153CB161FA8A5003DB80B /* XboxControllerHID.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 0; path = XboxControllerHID.cpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
 		7C6153CD161FA8A5003DB80B /* XboxControllerHID-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "XboxControllerHID-Prefix.pch"; sourceTree = "<group>"; };
+		7C6153D3161FA8D0003DB80B /* XboxControllerHIDKeys.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = XboxControllerHIDKeys.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		7C94F53D16F4A85A00E841B7 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IOKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C94F53E16F4A85A00E841B7 /* IOKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,23 +56,17 @@
 		7C6153C1161FA8A5003DB80B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7C6153C2161FA8A5003DB80B /* Other Frameworks */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		7C6153C2161FA8A5003DB80B /* Other Frameworks */ = {
-			isa = PBXGroup;
-			children = (
+				7C94F53D16F4A85A00E841B7 /* IOKit.framework */,
 				7C6153C3161FA8A5003DB80B /* Kernel.framework */,
 			);
-			name = "Other Frameworks";
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		7C6153C4161FA8A5003DB80B /* XboxControllerHID */ = {
 			isa = PBXGroup;
 			children = (
 				7C6153CA161FA8A5003DB80B /* XboxControllerHID.h */,
+				7C6153D3161FA8D0003DB80B /* XboxControllerHIDKeys.h */,
 				7C6153CB161FA8A5003DB80B /* XboxControllerHID.cpp */,
 				7C6153C5161FA8A5003DB80B /* Supporting Files */,
 			);
@@ -243,6 +241,10 @@
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1.0.0d1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "XboxControllerHID/XboxControllerHID-Prefix.pch";
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
@@ -259,6 +261,10 @@
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1.0.0d1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "XboxControllerHID/XboxControllerHID-Prefix.pch";
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
@@ -289,6 +295,7 @@
 				7C6153D2161FA8A5003DB80B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

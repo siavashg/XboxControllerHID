@@ -1,2 +1,6 @@
 /* Localized versions of Info.plist keys */
 
+CFBundleName = "XboxControllerHID";
+CFBundleShortVersionString = "1.0";
+CFBundleGetInfoString = "1.0, Universal Binary 2012-10-06";
+NSHumanReadableCopyright = "Copyright Siavash Ghorbani 2012";
